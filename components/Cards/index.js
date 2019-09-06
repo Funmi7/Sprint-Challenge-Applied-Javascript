@@ -24,28 +24,20 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         response.data.articles.javascript.forEach((element) => {
             cardsContainer.appendChild(cardCreator(element))
         })    
-    })
 
-    .then(response => {
         response.data.articles.bootstrap.forEach((element) => {
             cardsContainer.appendChild(cardCreator(element))
         })    
-    })
 
-    .then(response => {
         response.data.articles.technology.forEach((element) => {
             cardsContainer.appendChild(cardCreator(element))
         })    
-    })
-
-    .then(response => {
+    
         response.data.articles.jquery.forEach((element) => {
             cardsContainer.appendChild(cardCreator(element))
         })    
-    })
 
-    .then(response => {
-        response.data.bootstrap.node.forEach((element) => {
+        response.data.articles.node.forEach((element) => {
             cardsContainer.appendChild(cardCreator(element))
         })    
     })
